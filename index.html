@@ -52,6 +52,7 @@
 
     <!-- about section  -->
     <section class="about" id="about">
+        <button class="btn1" onclick="myfunction()">Dark Mode</button>
         <div class="max-width">
             <h2 class="title">About me</h2>
             <div class="about-content">
@@ -348,11 +349,49 @@
         </div>
     </section>
 
+    <title>Dark Mode</title>
+	
+	<style type="text/css">
+        
+        .darkmode{
+            color:white;
+			background-color: black;
+		}
+
+        .btn1{
+            float: right;
+            margin-right: 2.5rem;
+        }
+
+        @media screen and (max-width:950px) {
+            .btn1{
+            float: right;
+            margin-right: 1.5rem;
+            }
+            .darkmode{
+            color:white;
+			background-color: black;
+		}
+        }
+        
+        </style>
+    
+	<!-- <button onclick="myfunction()">Dark Mode</button> -->
+    
+	<script type="text/javascript">
+        
+        function myfunction(){
+            
+            var mode = document.body;
+	        mode.classList.toggle("darkmode");	
+		}
+        </script>
+
     <!-- footer section start -->
     <footer>
         <span>Created By Letlhogonolo | <span class="far fa-copyright"></span> 2020 All rights reserved.</span>
     </footer>
-
+    
     <script src="script.js"></script>
 </body>
 
